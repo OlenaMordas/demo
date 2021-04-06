@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.basic;
 
+import com.example.demo.SortAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
