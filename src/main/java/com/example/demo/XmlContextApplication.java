@@ -12,6 +12,8 @@ public class XmlContextApplication {
 	public static void main(String[] args) {
 
 		try (ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml")) {
+
+			logger.info("Beans loaded : {}", (Object) applicationContext.getBeanDefinitionNames());
 			XMLPersonDAO xmlPersonDAO = applicationContext.getBean(XMLPersonDAO.class);
 			logger.info("{}", xmlPersonDAO, xmlPersonDAO.getXmlJdbcConnection());
 		}
