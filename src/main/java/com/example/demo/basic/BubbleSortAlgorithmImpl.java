@@ -1,10 +1,11 @@
-package com.example.demo;
+package com.example.demo.basic;
 
-import org.springframework.context.annotation.Primary;
+import com.example.demo.SortAlgorithm;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@Qualifier("bubble")
 public class BubbleSortAlgorithmImpl implements SortAlgorithm {
 
     public int[] sort(int[] numbers) {
